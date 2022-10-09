@@ -19,17 +19,25 @@ h3,
 p,
 ul{
 margin: 0;
+padding-left: 0;
 }
 ul{
     list-style: none;
 }
-/* header start */
 .container{
     padding-left: 15px;
     padding-right: 15px;
     max-width: 1200px;
     margin: 0 auto;
     outline: 1px solid tomato;
+}
+/* header start */
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+.page-header{
+    border: 1px solid #ECECEC;
 }
 .logo-link{
     color: var(--button-link-color);
@@ -39,10 +47,29 @@ ul{
     font-size: 26px;
     letter-spacing: 0.03em;
     line-height: 1.19230769;
-    outline: 1px solid tomato;
+    margin-right: 93px;
 }
 .logo-header{
     color: var(--logo-header-color);
+}
+.header-nav{
+    display: flex;
+}
+.nav-list{
+    margin-right: 50px;
+}
+.nav-list:last-child{
+    margin-right: 0;
+}
+.header-contact{
+    display: flex;
+    margin-left: auto;
+}
+.contact-list{
+
+}
+.contact-list:last-child{
+    margin-left: 50px;
 }
 .decorate-contact a{
     font-family: var(--brand-font);
@@ -52,7 +79,9 @@ ul{
     font-size: 14px;
     line-height: 1.14285714;
     letter-spacing: 0.02em;
-    outline: 1px solid tomato;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .decorate-contact .link{
     color: var(--button-link-color);   
@@ -65,6 +94,11 @@ ul{
     color:var(--adult-color);
 }
 /* header end */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-hero{
     background-color:var(--background-color);
     text-align: center;
@@ -115,16 +149,14 @@ ul{
  clip-path: inset(50%);
  margin: -1px;
 } 
-.container-advantages{
-
-
-    outline: 1px solid tomato;
-}
-.section-advantages{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .style-advantages{
+    display: flex;
+}
+.advantages-list{
+    margin-right: 30px;
+}
+.advantages-list:last-child{
+    margin-right: 0;
 }
 .title-advantages{
     font-size: 14px;
@@ -139,16 +171,30 @@ ul{
     color:var(--adult-color);
     margin-top: 10px;
 }
-.title-two{
+.title-works{
     font-size: 36px;
     line-height: 1.16666667;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.works-list{
+    display: flex;
+    justify-content: space-between;
+}
+.fix-img{
+    display: block;
+}
+.visit-card{
+    display: flex;
+    justify-content: space-between;
 }
 .visit-card h3{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1875;
     letter-spacing: 0.03em;
+    
 }
 .visit-card p{
     font-weight: 500;
@@ -157,8 +203,15 @@ ul{
     letter-spacing: 0.03em;
     color:var(--adult-color);
 }
-.color-last{
+.section-card{
     background-color:var(--section-color);
+    text-align: center;
+}
+.title-card{
+    font-size: 36px;
+    line-height: 1.16666667;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 .button-list{
     border: none;
@@ -189,6 +242,16 @@ ul{
     line-height: 1.875;
     letter-spacing: 0.03em;
     color:var(--adult-color);
+}
+.logo-address{
+    color: var(--button-link-color);
+    font-family: Raleway;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.19230769;
+    outline: 1px solid tomato;
 }
 .logo-footer{
     color:var(--logo-footer-color);
