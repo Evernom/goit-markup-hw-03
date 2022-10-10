@@ -29,7 +29,6 @@ ul{
     padding-right: 15px;
     max-width: 1200px;
     margin: 0 auto;
-    outline: 1px solid tomato;
 }
 /* header start */
 .flex-div{
@@ -102,8 +101,6 @@ ul{
 .section-hero{
     background-color:var(--background-color);
     text-align: center;
-
-    outline: 1px solid tomato;
 }
 .title-hero{
     font-weight: 900;
@@ -113,9 +110,6 @@ ul{
     text-transform: uppercase;
     color:var(--logo-footer-color);
     margin-bottom: 30px;
-
-
-    outline: 1px solid tomato;
 }
 .hero-button{
     background-color:var(--button-link-color);
@@ -129,9 +123,6 @@ ul{
     cursor: pointer;
     border: none;
     padding: 10px 32px;
-
-    outline: 1px solid tomato;
-
 }
 .hero-button:hover,
 .hero-button:focus{
@@ -189,12 +180,19 @@ ul{
     display: flex;
     justify-content: space-between;
 }
+.visit-card li{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color:var(--logo-footer-color);
+}
 .visit-card h3{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1875;
     letter-spacing: 0.03em;
-    
+    margin-top: 30px;
+    margin-bottom: 10px;
+
 }
 .visit-card p{
     font-weight: 500;
@@ -202,6 +200,7 @@ ul{
     line-height: 1.1875;
     letter-spacing: 0.03em;
     color:var(--adult-color);
+    margin-bottom: 30px;
 }
 .section-card{
     background-color:var(--section-color);
@@ -251,7 +250,9 @@ ul{
     font-size: 26px;
     letter-spacing: 0.03em;
     line-height: 1.19230769;
-    outline: 1px solid tomato;
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 20px;
 }
 .logo-footer{
     color:var(--logo-footer-color);
@@ -265,6 +266,13 @@ ul{
     font-size: 14px;
     line-height: 1.71428571;
     letter-spacing: 0.03em;
+}
+.address-list{
+    margin-bottom: 9px;
+}
+.address-list:last-child{
+    margin-bottom: 0;
+    padding-bottom: 60px;
 }
 .adress-link{
     color:var(--logo-footer-color);
