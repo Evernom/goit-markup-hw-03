@@ -94,7 +94,9 @@ ul{
 }
 .section-hero{
     background-color:var(--background-color);
+    padding: 200px 0;
     text-align: center;
+
 }
 .title-hero{
     font-weight: 900;
@@ -103,7 +105,8 @@ ul{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:var(--logo-footer-color);
-    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto 30px;
 }
 .hero-button{
     background-color:var(--button-link-color);
@@ -137,12 +140,11 @@ ul{
 } 
 .style-advantages{
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .advantages-list{
-    margin-right: 30px;
-}
-.advantages-list:last-child{
-    margin-right: 0;
+    flex-basis: calc((100% - 90px) / 4);
 }
 .title-advantages{
     font-size: 14px;
@@ -157,6 +159,9 @@ ul{
     color:var(--adult-color);
     margin-top: 10px;
 }
+.section-works{
+    padding-top: 0;
+}
 .title-works{
     font-size: 36px;
     line-height: 1.16666667;
@@ -166,19 +171,25 @@ ul{
 }
 .works-list{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.works-list li{
+    flex-basis: calc((100% - 60px) / 3);
 }
 .fix-img{
     display: block;
 }
 .visit-card{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .visit-card li{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color:var(--logo-footer-color);
+    flex-basis: calc((100% - 90px) / 4);
 }
 .visit-card h3{
     font-weight: 500;
@@ -187,7 +198,6 @@ ul{
     letter-spacing: 0.03em;
     margin-top: 30px;
     margin-bottom: 10px;
-
 }
 .visit-card p{
     font-weight: 500;
